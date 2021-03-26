@@ -1,6 +1,8 @@
 from celery import shared_task
 from .models import EntryModel
 import smtplib
+from bs4 import BeautifulSoup
+import requests
 
 def send_mail(email,url,price):
     server = smtplib.SMTP('smtp.gmail.com', 587)
