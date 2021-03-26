@@ -15,3 +15,6 @@ class EntryModel(models.Model):
     url = models.URLField()
     price = models.DecimalField(decimal_places=2,max_digits=10)
     email = models.EmailField()
+
+    def __str__(self):
+        return f"{self.email} | {self.site.name}"
