@@ -32,10 +32,14 @@ def check():
     entries = EntryModel.objects.all()
     for entry in entries:
         wanted_price = entry.price
-        current_price = entry.site.price_function
+        function_text = entry.site.price_function
         
+        exec(function_text,globals())
+
+        current_price = f(entry.url)
+
         if current_price < wanted_price:
-            send_mail(entry.email,entry.url,untry.price)
+            send_mail(entry.email, entry.url, entry.price)
             entry.delete()
 
     return "checked"
