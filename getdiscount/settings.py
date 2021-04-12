@@ -28,7 +28,7 @@ SECRET_KEY = 'wiq6n$rwm-=7v^dcgydrofbg6-&l_k+te0emk#6^ata$-tf8%b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [46.101.243.16]
 
 
 # Application definition
@@ -78,10 +78,15 @@ WSGI_APPLICATION = 'getdiscount.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'discounter',
+        'USER': 'discountuser',
+        'PASSWORD': 'zklmjase619',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
