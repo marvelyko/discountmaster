@@ -12,7 +12,7 @@ class SiteModel(models.Model):
 
 class EntryModel(models.Model):
     site = models.ForeignKey(SiteModel,on_delete=models.CASCADE)
-    url = models.URLField()
+    url = models.CharField(max_length=10000)
     price = models.DecimalField(decimal_places=2,max_digits=10)
     email = models.EmailField()
 
