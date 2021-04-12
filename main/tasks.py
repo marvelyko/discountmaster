@@ -41,7 +41,7 @@ def check():
         current_price = f(entry.url)
 
         if current_price < wanted_price:
-            send_mail(entry.email, entry.url, entry.price)
+            send_mail(entry.email, entry.url, current_price)
             entry.delete()
 
     return "checked"
