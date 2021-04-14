@@ -127,34 +127,6 @@ header{
     display: block;
     margin-bottom: 10px;
 }
-.form-banner-amazon{
-    width: 100%;
-    background-image: url("../images/Amazon-logo.jpg");
-    height: 100px;
-    background-position: center;
-    background-size: cover;
-}
-.form-banner-ebay{
-    width: 100%;
-    background-image: url("../images/ebay-logo.jpg");
-    height: 100px;
-    background-position: center;
-    background-size: cover;
-}
-.form-banner-vendoo{
-    width: 100%;
-    background-image: url("../images/vendoo-logo.png");
-    height: 100px;
-    background-position: center;
-    background-size: cover;
-}
-.form-banner-alibaba{
-    width: 100%;
-    background-image: url("../images/alibaba-logo.jpg");
-    height: 100px;
-    background-position: center;
-    background-size: cover;
-}
 .filling-form{
     padding: 20px;
 }
