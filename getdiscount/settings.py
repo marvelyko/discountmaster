@@ -27,7 +27,7 @@ SECRET_KEY = 'wiq6n$rwm-=7v^dcgydrofbg6-&l_k+te0emk#6^ata$-tf8%b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["46.101.243.16"]
+ALLOWED_HOSTS = ["discounter.gaziardi.ge/"]
 
 
 # Application definition
