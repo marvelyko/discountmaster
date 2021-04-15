@@ -130,9 +130,9 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = BASE_DIR/'static'
 
-MEDIA_ROOT = BASE_DIR/'uploads'
-
 MEDIA_URL = '/uploads/'
+
+MEDIA_ROOT = BASE_DIR/'uploads'
 
 django_heroku.settings(locals())
 
