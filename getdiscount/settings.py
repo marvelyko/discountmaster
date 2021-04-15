@@ -132,5 +132,3 @@ STATIC_ROOT = BASE_DIR/'static/'
 MEDIA_URL = '/uploads/'
 
 MEDIA_ROOT = BASE_DIR/'uploads'
-
-CELERY_BROKER_URL = 'redis://:p54af18b0c91c4cc87fc03628283fbab018a97948a55d15804c2f530c64ac7294@ec2-54-166-2-65.compute-1.amazonaws.com:16849'
