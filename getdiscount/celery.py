@@ -4,7 +4,7 @@ from celery.schedules import crontab
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE","getdiscount.settings")
 
-app = Celery("getdiscount",backend="pyamqp",broker="amqp://")
+app = Celery("getdiscount",backend="pyamqp://",broker="amqp://")
 
 app.config_from_object("django.conf:settings",namespace="CELERY")
 
