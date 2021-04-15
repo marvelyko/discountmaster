@@ -3,6 +3,7 @@ from .models import EntryModel
 import smtplib
 from bs4 import BeautifulSoup
 import requests
+from datetime import datetime
 
 def send_mail(email,url,price):
     server = smtplib.SMTP('smtp.gmail.com', 587)
@@ -44,4 +45,4 @@ def check():
             send_mail(entry.email, entry.url, current_price)
             entry.delete()
 
-    return "checked"
+    print("checked | "+datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
