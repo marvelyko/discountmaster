@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import django_heroku
 import dj_database_url
 from decouple import config
 
@@ -26,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'wiq6n$rwm-=7v^dcgydrofbg6-&l_k+te0emk#6^ata$-tf8%b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["46.101.243.16"]
 
@@ -128,12 +127,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = BASE_DIR/'static'
+STATIC_ROOT = BASE_DIR'static/'
 
 MEDIA_URL = '/uploads/'
 
 MEDIA_ROOT = BASE_DIR/'uploads'
-
-django_heroku.settings(locals())
 
 CELERY_BROKER_URL = 'redis://:p54af18b0c91c4cc87fc03628283fbab018a97948a55d15804c2f530c64ac7294@ec2-54-166-2-65.compute-1.amazonaws.com:16849'
